@@ -31,8 +31,8 @@ bot.command('generate', generate )
 bot.command('clear',clear)
 
 bot.on(message('text'),onMessage)
-// bot.help((ctx)=> ctx.reply("send me a sticker"))
-// bot.hears('hi',ctx=>ctx.reply("hey there"))
+bot.help((ctx)=> ctx.reply("send me a sticker"))
+bot.hears('hi',ctx=>ctx.reply("hey there"))
 bot.launch();
 // graceful shutdown
 process.once('SIGINT', () => bot.stop('SIGINT'))
