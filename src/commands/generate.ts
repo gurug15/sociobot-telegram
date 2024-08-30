@@ -30,7 +30,7 @@ const generate = async (ctx:any)=>{
      
     const currentUser =  await user.findOne({
         tgId: from.id,
-        promptTokens: {$gte: 10}
+        promptTokens: {$gte: 5000}
      }) 
 
      if(currentUser){
